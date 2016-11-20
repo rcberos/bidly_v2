@@ -1,0 +1,36 @@
+Bidly.config(["$stateProvider", "$httpProvider", "$urlRouterProvider", "$locationProvider",
+  function($stateProvider, $httpProvider, $urlRouterProvider, $locationProvider) {
+  $stateProvider
+    .state('index', {
+      url: '/',
+      templateUrl: 'users/login.html',
+      controller: 'HomeController'
+    })
+
+    .state('nav', {
+      abstract: true,
+      templateUrl: 'shared/nav.html',
+      controller: 'NavController'
+    })
+
+    .state('nav.items', {
+      url: '/items',
+      views: {
+        'content': {
+          templateUrl: 'items/items.html',
+          controller: 'ItemController'
+        }
+      }
+    })
+
+
+    $httpProvider.defaults.withCredentials = true;
+    $urlRouterProvider.otherwise('/');
+    $locationProvider.html5Mode({
+  enabled: true,
+  requireBase: false
+});
+
+  }]).run(["$rootScope", "$state", function($rootScope, $state) {
+      $rootScope.$state = $state;
+    }]);

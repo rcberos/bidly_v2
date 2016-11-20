@@ -1,0 +1,32 @@
+.app-content {
+  background-color: #f7f7f7;
+}
+.item-header {
+  border: 1px solid #cfcfcf;
+  background-color: #fff;
+
+  img {
+    width: 60%;
+    display: block;
+    margin: 4vw auto;
+  }
+
+  h4 {
+    font-family: 'Archer';
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+}
+
+.item-info {
+  padding: 30px 0;
+
+  i {
+    font-size: 35px;
+  }
+
+  button {
+    width: 75%;
+    padding: 10px;
+  }
+}

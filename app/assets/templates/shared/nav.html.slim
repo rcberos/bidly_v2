@@ -1,0 +1,33 @@
+header
+  a.pull-left.logo href="/"
+    h3 BIDLY
+  ul.nav
+    a href="/class"
+      li.links 
+        | How does it work?
+      li.links |
+      li.links Past Winners
+    .pull-right
+      .row.row-space-top-1.right-nav
+        .col-md-8
+          span on-toggle="toggled(open)" uib-dropdown="" 
+            a#dropdown href="" uib-dropdown-toggle="" 
+              | Hi Deenu,
+            ul.dropdown-menu aria-labelledby="simple-dropdown" uib-dropdown-menu="" 
+              li ng-repeat="choice in items" 
+                a 
+                  | {{choice}}
+          input type="text" class="form-control" placeholder="Search"
+        .col-md-4#coins
+          .row
+            .col-md-2
+              i.line-icon
+                | &#xe355;
+            .col-md-8
+              p 100.00
+              p Credits
+.subnavbar
+  p 
+    span.orange Save up to 90% off all best brands! 
+    | Just Purchase, Bid and Save!
+div ui-view="content"
