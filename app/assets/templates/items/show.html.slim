@@ -1,0 +1,43 @@
+.app-content
+  .container
+    .item-header.row-space-top-3 ng-include="" src="item.templateUrl"
+    .row.no-margin
+      .col-md-8.row-space-top-3#first_column
+        .item-header
+          ul
+            li.links ng-click="tab('details')" 
+              strong.tab_choices ng-class="{tab_choices_active: selection=='details'}"
+                | DETAILS
+            li.links ng-click="tab('delivery')" 
+              strong.tab_choices ng-class="{tab_choices_active: selection=='delivery'}"
+                | DELIVERY INFO
+          .content_tab ng-switch="" on="selection" 
+            p ng-switch-when="details" 
+              | Hottest Iphone in Town 
+            p ng-switch-when="delivery" 
+              | Not good phone
+      .col-md-4.item-header.row-space-top-3
+        .border-bottom
+          .row.row-space-top-3
+            .col-md-6
+              p.no-margin
+                strong
+                  | Bidders
+              p
+                strong
+                  | (Min Bidders: 250)
+            .col-md-6
+              p.align-right 
+                strong
+                  | 1003
+        .row.row-space-top-3
+          .col-md-6
+            p.no-margin.header-font
+              | bidlyko
+          .col-md-6
+            p.align-right.header-font
+              | 01:14:53 AM
+    h3.center.header-font
+      | You may also like
+    .row-space-top-3 ng-include="" src="suggestions.templateUrl"
+    

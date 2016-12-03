@@ -23,6 +23,16 @@ Bidly.config(["$stateProvider", "$httpProvider", "$urlRouterProvider", "$locatio
       }
     })
 
+    .state('nav.show', {
+      url: '/items/show',
+      views: {
+        'content': {
+          templateUrl: 'items/show.html',
+          controller: 'ItemController'
+        }
+      }
+    })
+
 
     $httpProvider.defaults.withCredentials = true;
     $urlRouterProvider.otherwise('/');

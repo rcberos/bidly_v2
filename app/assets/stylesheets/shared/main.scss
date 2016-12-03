@@ -2,6 +2,7 @@ body {
   font-family: 'Avenir';
   font-weight: normal;
   font-style: normal;
+  color: $darkblue
 }
 .row-space-0 {
   margin-bottom: 0;
@@ -102,6 +103,9 @@ body {
 .center {
   text-align: center;
 }
+.align-right {
+  text-align: right;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -110,7 +114,6 @@ body {
   font-family: "streamline-30px";
   font-style: normal;
 }
-
 .outline-button {
   border-radius: 3px;
   background: #fff;
@@ -118,12 +121,16 @@ body {
   font-weight: 300;
   padding: 3px 10px;
 }
-
 .outline-button-orange {
   border: solid 1px $orange;
 }
-
 .outline-button-orange:hover {
   background-color: $orange;
   color: #fff !important;
+}
+.border-bottom {
+  border-bottom: 1px solid $darkblue;
+}
+.header-font {
+  font-family: $header-font
 }

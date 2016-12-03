@@ -12,7 +12,7 @@
   }
 
   h4 {
-    font-family: 'Archer';
+    font-family: $header-font;
     font-weight: 400;
     letter-spacing: 3px;
   }
@@ -29,4 +29,69 @@
     width: 75%;
     padding: 10px;
   }
+}
+
+.expiring-cards {
+  display: inline-block;
+  width: 300px;
+  background-color: #fff;
+  margin: 10px;
+  border: 1px solid #ccc;
+
+  img {
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+  }
+  #expiring {
+    background-color: $darkblue;
+    margin: 0;
+    color: #fff;
+  }
+  p {
+    margin: 5px 0;
+  }
+  .description {
+    margin: 10px;
+    i {
+      font-size: 30px;
+    }
+    p {
+      margin: 0;
+    }
+    h4 {
+      font-family: $header-font;
+      color: $light-blue;
+      font-size: 21px;
+    }
+  }
+
+  .bid-now {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+  }
+  button {
+    font-size: 14px;
+  }
+}
+
+#first_column {
+  padding-left: 0px;
+  padding-right: 8px;
+}
+
+.tab_choices {
+  padding-bottom: 3px;
+  color: $darkblue;
+  cursor: pointer;
+  letter-spacing: 1.3px;
+}
+
+.tab_choices_active {
+  border-bottom: 2px solid $darkblue;
+}
+
+.content_tab {
+  margin-left: 4em;
 }
