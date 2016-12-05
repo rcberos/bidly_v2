@@ -1,5 +1,5 @@
 angular.module('Bidly.controllers')
-  .controller('HomeController', ["$scope", "$state", "Facebook", "$rootScope", "$window", "UserService",  function($scope, $state, Facebook, $rootScope, $window, UserService) {
+  .controller('LoginController', ["$scope", "$state",  function($scope, $state) {
 
 
     $scope.passcode = false
@@ -13,16 +13,6 @@ angular.module('Bidly.controllers')
        "action": 'code',
        "code": $scope.user.password
      }
-
-     UserService.hive(data)
-      .then(function(d){
-        console.log(d)
-        if(d.status == 'ok') {
-          $window.open('https://e1fca0c3.ngrok.io/login?page_id=' + d.page_id, '_self')
-        }
-        else {
-          console.log("there is a problem with your passcode")
-        }
 
     });
 

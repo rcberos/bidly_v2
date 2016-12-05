@@ -1,41 +1,44 @@
-.head
-  = image_tag 'login.jpg', class: 'cover'
-.container.login
+.login
   .signin-form
     .color-bar
       table
         tr
-          td.green
-          td.flesh
-          td.orange
-          td.red
-          td.pink
-          td.violet
           td.blue
-    .title
-      h4 Honeypot Login
+          td.light-blue
+          td.orange
+          td.pink
+    h4.center Login to Bidly
     .body
+      button.btn.btn-block.btn-info.fb-blue type="submit" Signin with Facebook
+      p.row-space-top-3.center
+        | or
       .alert.alert-danger.alert-dismissable ng-if="user.errors" 
         p
           | Oops. Please check your login details.
-      form name="login_form" ng-submit="submitLogin()"
+      form.row-space-top-3 name="login_form" ng-submit="submitLogin()"
         / .form-group
         /   i.side-icon.fa.fa-user
         /   input.form-control type="email" placeholder="What's your email?" ng-model="user.email"
         .form-group
+          i.side-icon.fa.fa-envelope
+          input.form-control type="email" placeholder="Email Address" ng-model="user.email"
+        .form-group
           i.side-icon.fa.fa-lock
-          input.form-control type="password" placeholder="What's your passcode" ng-model="user.password"
+          input.form-control type="password" placeholder="Password" ng-model="user.password"
         .form-group 
-          button.btn.btn-block.btn-info.red type="submit" Submit
-        / .form-group
-        /   p.align-center ----------- or -----------
-        / .form-group ng-show="fb"
-        /   button.btn.btn-block.btn-info ng-click="fblogin()" 
-        /     i.add-margin-right.fa.fa-facebook
-        /     span 
-        /       | Sign in with Facebook
-        / label.checkbox for="rememberMe"
-        /   input type="checkbox" value="" id="rememberMe" data-toggle="checkbox"
-        /   | Remember me
-        p.underline ng-click="signup()" Not Signup yet? Request for a demo
-      
+          button.btn.btn-block.btn-info.bg-green type="submit" Submit
+      / .form-group
+      /   p.align-center ----------- or -----------
+      / .form-group ng-show="fb"
+      /   button.btn.btn-block.btn-info ng-click="fblogin()" 
+      /     i.add-margin-right.fa.fa-facebook
+      /     span 
+      /       | Sign in with Facebook
+      / label.checkbox for="rememberMe"
+      /   input type="checkbox" value="" id="rememberMe" data-toggle="checkbox"
+      /   | Remember me
+      p.underline ng-click="signup()" 
+        | New to Bidly? 
+        u 
+          | Signup for a Free Account
+    

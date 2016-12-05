@@ -94,11 +94,26 @@ body {
 .bg-green {
   background: $green;
 }
+.bg-green:hover {
+  background: lighten($green, 7%);;
+}
 .bg-white {
   background: white;
 }
 .white {
   color: white;
+}
+.pink {
+  color: $pink;
+}
+.green {
+  color: $green;
+}
+.red {
+  color: $red;
+}
+.light-blue {
+  color: $light-blue;
 }
 .center {
   text-align: center;
@@ -128,9 +143,39 @@ body {
   background-color: $orange;
   color: #fff !important;
 }
+.outline-button-green {
+  border: solid 1px $green;
+}
+.outline-button-green:hover {
+  background-color: $green;
+  color: #fff !important;
+}
+.outline-button-red {
+  border: solid 1px $red;
+}
+.outline-button-red:hover {
+  background-color: $red;
+  color: #fff !important;
+}
+.outline-button-light-blue {
+  border: solid 1px $light-blue;
+}
+.outline-button-light-blue:hover {
+  background-color: $light-blue;
+  color: #fff !important;
+}
 .border-bottom {
   border-bottom: 1px solid $darkblue;
 }
 .header-font {
   font-family: $header-font
+}
+.add-margin-right {
+  margin-right: 7px;
+}
+table {
+  width: 100%;
+}
+.italic {
+  font-style: italic;
 }

@@ -1,0 +1,30 @@
+.all_items {
+  padding-right: 10px;
+}
+
+.dashboard_credits {
+  font-family: $header-font;
+}
+
+.settings {
+  h5 {
+    font-size: 17px;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-right: 11px;
+  }
+  label {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  button {
+    padding: 10px 50px;
+    font-size: 13px;
+    letter-spacing: 1.3px;
+  }
+}

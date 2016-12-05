@@ -1,11 +1,6 @@
 Bidly.config(["$stateProvider", "$httpProvider", "$urlRouterProvider", "$locationProvider",
   function($stateProvider, $httpProvider, $urlRouterProvider, $locationProvider) {
   $stateProvider
-    .state('index', {
-      url: '/',
-      templateUrl: 'users/login.html',
-      controller: 'HomeController'
-    })
 
     .state('nav', {
       abstract: true,
@@ -14,7 +9,7 @@ Bidly.config(["$stateProvider", "$httpProvider", "$urlRouterProvider", "$locatio
     })
 
     .state('nav.items', {
-      url: '/items',
+      url: '/',
       views: {
         'content': {
           templateUrl: 'items/items.html',
@@ -29,6 +24,26 @@ Bidly.config(["$stateProvider", "$httpProvider", "$urlRouterProvider", "$locatio
         'content': {
           templateUrl: 'items/show.html',
           controller: 'ItemController'
+        }
+      }
+    })
+
+    .state('nav.dashboard', {
+      url: '/dashboard',
+      views: {
+        'content': {
+          templateUrl: 'users/dashboard.html',
+          controller: 'DashboardController'
+        }
+      }
+    })
+
+    .state('nav.login', {
+      url: '/login',
+      views: {
+        'content': {
+          templateUrl: 'users/login.html',
+          controller: 'LoginController'
         }
       }
     })
