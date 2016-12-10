@@ -14,18 +14,7 @@ angular.module('Bidly.controllers')
        "code": $scope.user.password
      }
 
-    });
-
-    //  result = {
-    //    page_id: '1779236905645324',
-    //    type: 'honeypot_v0',
-    //    status: 'success'
-    //  }
-     //
-    //  if(result.type == 'honeypot_v0') {
-    //    $window.open('https://cryptic-ridge-33738.herokuapp.com/login', '_self')
-    //  }
-   }
+    };
 
 
 

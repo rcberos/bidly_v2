@@ -167,6 +167,9 @@ body {
 .border-bottom {
   border-bottom: 1px solid $darkblue;
 }
+.border-left {
+  border-left: 1px solid $darkblue;
+}
 .header-font {
   font-family: $header-font
 }
@@ -178,4 +181,7 @@ table {
 }
 .italic {
   font-style: italic;
+}
+.padding-right-0 {
+  padding-right: 0;
 }

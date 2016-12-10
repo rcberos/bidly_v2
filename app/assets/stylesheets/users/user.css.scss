@@ -49,6 +49,13 @@
   .body {
     padding: 25px 25px 35px;
 
+    .facebook-icon {
+      color: #fff;
+      font-size: 31px;
+      padding: 17px 11px;
+      position: absolute;
+    }
+
     .form-control {
       border: none;
       background-color: #f3f6f6;
@@ -59,7 +66,7 @@
     }
 
     .form-group {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     .side-icon {
@@ -82,6 +89,7 @@
       font-size: 16px;
       text-align: left;
       font-weight: 100;
+      padding: 10px 44px;
     }
 
     .forgot {
@@ -164,5 +172,50 @@
         font-size: 13px;
       }
     }
+  }
+}
+
+
+//register
+
+.register {
+  max-width: 950px;
+  margin: 9% auto;
+  padding: 10px;
+
+  h5 {
+    font-weight: bold;
+    font-family: $header-font;
+  }
+  i {
+    font-size: 55px;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  .form-control {
+    border: none;
+    background-color: #f3f6f6;
+    font-size: 17px;
+    font-weight: 300;
+    height: 55px;
+    padding-left: 40px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  .side-icon {
+    color: #e0e0e0;
+    font-size: 19px;
+    padding: 16px 11px;
+    position: absolute;
+  }
+  button {
+    padding: 15px;
+    font-size: 20px;
   }
 }

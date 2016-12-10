@@ -1,0 +1,56 @@
+.app-content
+  .container
+    .item-header.register
+      .row.row-space-top-7
+        .col-md-6.border-right
+          .row
+            .col-md-3.center
+              i.line-icon
+                | &#xe359;
+            .col-md-8
+              h5 Shipping is always FREE
+              p All items on Bidly come with free shipping and are typically shippied out within 1-2 days after purchase.
+          .row.row-space-top-7
+            .col-md-3.center
+              i.line-icon
+                | &#xe373;
+            .col-md-8
+              h5 Amazing Deals 24/7
+              p Bidly offers auctions on amazing products at even more apmazing prices 24/7.
+          .row.row-space-top-7.row-space-7
+            .col-md-3.center
+              i.line-icon
+                | &#xe358;
+            .col-md-8
+              h5 Secured Transactions
+              p Bidly only uses secured, SSL-compliant payments system. 
+        .col-md-6.border-left
+          h3.header-font.center Start Bidding Today
+          .alert.alert-danger.alert-dismissable ng-if="user.errors" 
+            p
+              | Oops. Please check your login details.
+          form.row-space-top-5 name="login_form" ng-submit="submitLogin()"
+            .row
+              .col-md-6.padding-right-0
+                .form-group
+                  i.side-icon.fa.fa-user-circle-o
+                  input.form-control type="email" placeholder="First Name" ng-model="user.fname"
+              .col-md-6
+                .form-group
+                  i.side-icon.fa.fa-user-circle-o
+                  input.form-control type="email" placeholder="Last Name" ng-model="user.lname"
+            .form-group
+              i.side-icon.fa.fa-envelope
+              input.form-control type="email" placeholder="Email Address" ng-model="user.email"
+            .form-group
+              i.side-icon.fa.fa-lock
+              input.form-control type="password" placeholder="Password" ng-model="user.password"
+            .form-group
+              i.side-icon.fa.fa-lock
+              input.form-control type="password" placeholder="Confirm Password" ng-model="user.confirm"
+            .form-group.row-space-top-5
+              button.btn.btn-block.btn-info.bg-green type="submit" Submit
+            p.center
+              | By signing up you confirm that you have read and agree to Bidly's Terms of use and Privacy Policy. You also confirm that you are 18 years of age and to only open one account per person. 
+          
+              

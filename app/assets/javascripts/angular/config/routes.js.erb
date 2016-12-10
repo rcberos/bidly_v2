@@ -48,6 +48,25 @@ Bidly.config(["$stateProvider", "$httpProvider", "$urlRouterProvider", "$locatio
       }
     })
 
+    .state('nav.register', {
+      url: '/register',
+      views: {
+        'content': {
+          templateUrl: 'users/register.html',
+          controller: 'LoginController'
+        }
+      }
+    })
+
+    .state('nav.how', {
+      url: '/how',
+      views: {
+        'content': {
+          templateUrl: 'pages/how.html',
+        }
+      }
+    })
+
 
     $httpProvider.defaults.withCredentials = true;
     $urlRouterProvider.otherwise('/');

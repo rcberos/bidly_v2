@@ -112,3 +112,18 @@ header {
     }
   }
 }
+
+footer {
+  background-color: $light-blue;
+  color: #fff;
+  padding: 70px 0px;
+
+  h2 {
+    margin: 0;
+    letter-spacing: 35px;
+  }
+  p {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+}
