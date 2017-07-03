@@ -1,0 +1,18 @@
+h3
+  |{{type}}
+span ng-repeat="t in items"
+	.expiring-cards
+      img ng-src = "{{t.ItemImageUrl}}" class = "logo-img"
+      .description
+        h4 
+        	|{{t.Name}}
+        .row.row-space-top-1
+          .col-md-12
+            .row
+              .col-md-3
+                i.line-icon
+                  | &#xe342;
+              .col-md-9
+                h4 P{{t.Price}}
+      .bid-now
+        button.outline-button.outline-button-orange.orange ng-click="addToCart(t.ItemID)" ADD to Cart

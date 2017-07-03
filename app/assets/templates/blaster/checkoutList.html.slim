@@ -1,0 +1,19 @@
+h3 Checkout
+span ng-repeat="t in items"
+	.expiring-cards
+      img ng-src = "{{t.ItemImageUrl}}" class = "logo-img"
+      .description
+        h4 
+        	|CheckoutID {{t.CheckoutID}}
+        .row.row-space-top-1
+          .col-md-12
+            .row
+              .col-md-12
+                h5 CheckoutDate: P{{t.CheckoutDate}}
+            .row
+              .col-md-12
+                h5 Number of Items: {{t.Items.length}}
+            .row
+              .col-md-12
+                h5 Total Price: P{{t.TotalPrice}}
+      

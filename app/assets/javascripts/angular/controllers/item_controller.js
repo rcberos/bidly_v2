@@ -1,6 +1,7 @@
 Bidly.controller('ItemController', ['$scope', '$location', 'DemoService', 'ngDialog',
   function($scope, $location, DemoService, ngDialog) {
 
+    console.log('item');
     $scope.selection = 'details';
 
     $scope.tab = function(selected) {

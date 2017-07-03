@@ -1,0 +1,25 @@
+h3 My Cart
+span ng-repeat="t in items"
+	.expiring-cards
+      img ng-src = "{{t.ItemImageUrl}}" class = "logo-img"
+      .description
+        h4 
+        	|{{t.Name}}
+        .row.row-space-top-1
+          .col-md-12
+            .row
+              .col-md-12
+                h5 Unit Price: P{{t.UnitPrice}}
+            .row
+              .col-md-12
+                h5 Quantity: {{t.Quantity}}
+            .row
+              .col-md-12
+                h5 Total Price: P{{t.TotalPrice}}
+      .bid-now
+        button.outline-button.outline-button-orange.orange ng-click="removeFromCart(t.ItemID)" Remove from Cart
+br
+br
+.center
+  button.outline-button.outline-button-orange.orange ng-click="checkout()" Checkout
+br

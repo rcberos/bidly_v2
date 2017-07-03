@@ -1,6 +1,6 @@
 .app-content
   .container
-    .item-header.row-space-top-3 ng-include="" src="item.templateUrl"
+    .item-header.row-space-top-3 ng-include="item.templateUrl"  src="item.templateUrl"
     .expiring-cards
       = image_tag "watch.jpg", :class => "logo-img"
       .row#expiring
@@ -29,8 +29,6 @@
                 p 1003
       .bid-now
         button.outline-button.outline-button-orange.orange ng-click="bid()" BID NOW
-        
-        
-          
-      
+
+  
     

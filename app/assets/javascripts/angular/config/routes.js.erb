@@ -8,6 +8,57 @@ Bidly.config(["$stateProvider", "$httpProvider", "$urlRouterProvider", "$locatio
       controller: 'NavController'
     })
 
+    .state('nav.blaster', {
+      abstract: true,
+      views: {
+        'content': {
+          templateUrl: 'blaster/menuHome.html',
+        }
+      },
+    })
+
+    .state('nav.blaster.menu', {
+      url: '/blaster',
+      views: {
+        'content': {
+          templateUrl: 'blaster/menuList.html',
+          controller: 'BlasterController',
+          
+        }
+      }
+    })
+
+    .state('nav.blaster.submenu', {
+      url: '/blaster/:qwe',
+      views: {
+        'content': {
+          templateUrl: 'blaster/menuList.html',
+          controller: 'BlasterController',
+        }
+      }
+    })
+
+    .state('nav.blaster.mycart', {
+      url: '/mycart',
+      views: {
+        'content': {
+          templateUrl: 'blaster/cartList.html',
+          controller: 'ShowCartController',
+        }
+      }
+    })
+
+    .state('nav.blaster.checkout', {
+      url: '/checkout',
+      views: {
+        'content': {
+          templateUrl: 'blaster/checkoutList.html',
+          controller: 'CheckoutController',
+        }
+      }
+    })
+
+
     .state('nav.items', {
       url: '/',
       views: {
