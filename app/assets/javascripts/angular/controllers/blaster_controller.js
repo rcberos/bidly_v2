@@ -33,6 +33,7 @@ Bidly.controller('BlasterController', ['$scope', '$location', 'DemoService', 'ng
             UserID: 1,
             ItemID: ItemID,
             Quantity: 1,
+            Token: 'xeag9vm6t3sd2z05il404elnluc051fu4t33ecnhri2ut0k244etp0ti9o5urb254n93733yfeohj22txpuqjxvp2ix2dtf6tltx',
             Action: 'add'
         }
         var url = 'http://bidly.southeastasia.cloudapp.azure.com/api/myCart';

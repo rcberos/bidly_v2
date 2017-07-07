@@ -6,6 +6,9 @@ Bidly.controller('ShowCartController', ['$scope', '$location', 'DemoService', 'n
     function showCart(){
         var data = {
             UserID: 1,
+            Token: 'xeag9vm6t3sd2z05il404elnluc051fu4t33ecnhri2ut0k244etp0ti9o5urb254n93733yfeohj22txpuqjxvp2ix2dtf6tltx', // one month Token
+            // Token: '222', // wrong Token
+            // Token: '2xazgyyxi2b4bwgcap49uoyhucqnqmclnamxj265l4rdm0u3pu1wyxb17wll47t0n5sy96h7uh0caqroe0izvn04gn3n7yacqytz', // Expired Token
             Action: 'show'
         }
         var url = 'http://bidly.southeastasia.cloudapp.azure.com/api/myCart';
@@ -34,6 +37,7 @@ Bidly.controller('ShowCartController', ['$scope', '$location', 'DemoService', 'n
         var data = {
             UserID: 1,
             ItemID: ItemID,
+            Token: 'xeag9vm6t3sd2z05il404elnluc051fu4t33ecnhri2ut0k244etp0ti9o5urb254n93733yfeohj22txpuqjxvp2ix2dtf6tltx',
             Action: 'remove'
         }
         var url = 'http://bidly.southeastasia.cloudapp.azure.com/api/myCart';
@@ -48,6 +52,7 @@ Bidly.controller('ShowCartController', ['$scope', '$location', 'DemoService', 'n
     $scope.checkout = function(){
         var data = {
             UserID: 1,
+            Token: 'xeag9vm6t3sd2z05il404elnluc051fu4t33ecnhri2ut0k244etp0ti9o5urb254n93733yfeohj22txpuqjxvp2ix2dtf6tltx',
             Action: 'checkout'
         }
         var url = 'http://bidly.southeastasia.cloudapp.azure.com/api/myCart';
